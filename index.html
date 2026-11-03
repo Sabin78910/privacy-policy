@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Sabin Khanal Apps</title>
-<meta name="description" content="Privacy policy for Expense Tracker, EMI Calculator, Notes, Block Drop Puzzle and Ludo Live by Sabin Khanal.">
+<meta name="description" content="Privacy policy for Expense Tracker, EMI Calculator, Notes, Block Drop Puzzle, Ludo Live and Prism Pop by Sabin Khanal.">
 <style>
 :root{--bg:#f7f8fb;--fg:#1d2433;--muted:#5b6475;--card:#fff;--border:#e2e5ee;--accent:#3f51b5}
 @media (prefers-color-scheme:dark){:root{--bg:#11141b;--fg:#e8ebf2;--muted:#9aa3b5;--card:#1a1f2a;--border:#2a3140;--accent:#8c9eff}}
@@ -18,16 +18,17 @@ section{background:var(--card);border:1px solid var(--border);border-radius:12px
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="muted">Apps by Sabin Khanal · Last updated: 3 November 2026 (added Ludo Live)</p>
+  <p class="muted">Apps by Sabin Khanal · Last updated: 3 November 2026 (added Ludo Live and Prism Pop)</p>
   <nav aria-label="Apps">
     <a href="#expense-tracker">Expense Tracker</a><a href="#emi-calculator">EMI Calculator</a>
-    <a href="#notes">Notes</a><a href="#block-drop">Block Drop Puzzle</a><a href="#ludo-live">Ludo Live</a>
+    <a href="#notes">Notes</a><a href="#block-drop">Block Drop Puzzle</a><a href="#ludo-live">Ludo Live</a><a href="#prism-pop">Prism Pop</a>
   </nav>
 
   <section>
     <h2>Summary</h2>
     <p>Expense Tracker, EMI Calculator and Notes do <strong>not</strong> collect, share, or sell any personal data. They have no accounts, no ads, no analytics, and no tracking, request no device permissions, and do not connect to the internet.</p>
     <p>Block Drop Puzzle is the same, except for its <strong>online leaderboards</strong> and <strong>crash reports</strong>, described in its section below. Ludo Live has no accounts, ads, analytics or tracking either; only its optional <strong>online rooms</strong> send data, described in its section below.</p>
+    <p>Prism Pop is the same, except for its <strong>optional, end-to-end encrypted cross-device sync</strong>, which is off until you turn it on and is described in its section below.</p>
     <p>Everything you enter stays <strong>only on your device</strong>, in the app's private storage. Uninstalling the app or clearing its data deletes it permanently. I have no access to it.</p>
   </section>
 
@@ -71,13 +72,27 @@ section{background:var(--card);border:1px solid var(--border);border-radius:12px
     </ul>
   </section>
 
+  <section id="prism-pop">
+    <h2>Prism Pop</h2>
+    <ul>
+      <li>Stores your levels, stars, scores, coins, boosters, daily streak, missions and settings on your device.</li>
+      <li>No accounts, no ads, no analytics and no tracking. The game asks for no device permissions beyond internet access, which only sync uses.</li>
+      <li><strong>Cross-device sync (optional, off by default):</strong> if you choose <em>Turn on sync</em>, the game creates a random sync code on your device. Your progress is encrypted on your device with a key made from that code (AES-256-GCM) before it is uploaded to our sync server, which runs on Cloudflare Workers (Cloudflare, Inc.). The server stores only the encrypted data, a random space ID and a version number. It cannot read your progress, and the secret part of your code never leaves your devices. The same code is shared by Sabin Khanal web apps on sabin78910.github.io, so one code syncs them all.</li>
+      <li>When sync is on, Cloudflare processes your IP address to deliver each request, as for any website, and may keep it briefly in its logs; the game never asks for your location. No name, email, contacts, location or advertising ID is collected.</li>
+      <li>Synced data is used only to give you the same progress on your other devices. It is not sold, not shared and not used for advertising. All traffic is encrypted in transit (HTTPS). Cloudflare processes requests under the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</li>
+      <li>Keep your sync code private: anyone with it can read and change your synced progress.</li>
+      <li>To stop syncing, choose <em>Turn off on this device</em>. To have the encrypted copy deleted from the server, contact us below; without your code it cannot be read, but we will delete it on request.</li>
+      <li>With sync off, or without internet, the game works fully offline and sends nothing.</li>
+    </ul>
+  </section>
+
   <section>
     <h2>Children</h2>
     <p>The apps collect no personal information from anyone, including children under 13.</p>
     <h2>Changes</h2>
     <p>If an app ever starts collecting data, this page will be updated before that version is released, and the date above will change.</p>
     <h2>Contact</h2>
-    <p>Questions, or want your leaderboard data removed? Email <a href="mailto:sabinkhanal13@gmail.com">sabinkhanal13@gmail.com</a>, or <a href="https://github.com/Sabin78910/privacy-policy/issues/new">open a question on GitHub</a>.</p>
+    <p>Questions, or want your leaderboard or sync data removed? Email <a href="mailto:sabinkhanal13@gmail.com">sabinkhanal13@gmail.com</a>, or <a href="https://github.com/Sabin78910/privacy-policy/issues/new">open a question on GitHub</a>.</p>
   </section>
 </main>
 </body>
